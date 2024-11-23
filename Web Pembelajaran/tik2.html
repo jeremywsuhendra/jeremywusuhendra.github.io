@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+    <title>Web Pembelajaran</title>
+    <link rel="stylesheet" href="styletik.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src='logocc.png'></a>
+            <div class="navlink">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="matematika.html">Matematika</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="mat1.html">Persamaan Lingkaran</a></li>
+                            <li><a href="mat2.html">Persamaan Garis Singgung</a></li>
+                            <li><a href="mat3.html">Teorema Sisa</a></li>
+                            <li><a href="mat4.html">Teorema Faktor dan Vietta</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="fisika.html">Fisika</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="fis1.html">Gravitasi</a></li>
+                            <li><a href="fis2.html">Usaha & Energi</a></li>
+                            <li><a href="fis3.html">Impuls & Momentum</a></li>
+                            <li><a href="fis4.html">KBT & Dinamika Rotasi</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="informatika.html">Informatika</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="tik1.html">HTML</a></li>
+                            <li><a href="tik2.html">CSS Internal</a></li>
+                            <li><a href="tik3.html">CSS Eksternal</a></li>
+                            <li><a href="tik4.html">Blender</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="sosiologi.html">Sosiologi</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="sos1.html">Kelompok Sosial</a></li>
+                            <li><a href="sos2.html">Permasalahan Sosial</a></li>
+                            <li><a href="sos3.html">Struktur Sosial</a></li>
+                            <li><a href="sos4.html">Konflik Sosial</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cccup.html">Canisius College Cup</a></li>
+                    <li><a href="tentangsaya.html">Tentang Saya</a></li>
+                </ul>
+            </div>
+        </nav>
+    <div class="textbox">
+        <h1>CSS Internal</h1>
+        <a href="#Isi" class="visit">Click to Learn</a>
+    </div>
+</section>
+<section class="row">
+    <div class="box sidebar">
+       <img src="iklan.jpeg">
+       <img src="iklan2.jpeg">
+    </div>
+    <div class="box main" id="Isi">
+        <div class="box main" id="Isi">
+            <h1>Pengenalan CSS Internal</h1>
+            <p>
+                CSS Internal adalah cara menulis aturan CSS di dalam elemen <code>&lt;style&gt;</code> yang terletak di dalam bagian <code>&lt;head&gt;</code> sebuah dokumen HTML. CSS internal sangat berguna ketika Anda hanya ingin menerapkan gaya untuk satu halaman web tanpa mempengaruhi halaman lain.
+            </p>
+
+            <h3>1. Struktur CSS Internal</h3>
+            <p>
+                CSS internal ditulis di dalam tag <code>&lt;style&gt;</code> yang diletakkan di dalam bagian <code>&lt;head&gt;</code> pada dokumen HTML. Berikut adalah contoh struktur dasar HTML dengan CSS internal:
+            </p>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Contoh CSS Internal&lt;/title&gt;
+                        &lt;style&gt;
+                            body {
+                                background-color: #f4f4f4;
+                                font-family: Arial, sans-serif;
+                            }
+                            h1 {
+                                color: blue;
+                                text-align: center;
+                            }
+                            p {
+                                color: green;
+                                font-size: 18px;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;Selamat datang di CSS Internal&lt;/h1&gt;
+                        &lt;p&gt;CSS Internal digunakan untuk memberi gaya pada halaman ini.&lt;/p&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+
+            <h3>2. Penjelasan Elemen</h3>
+            <p>
+                - <code>&lt;style&gt;</code>: Elemen ini digunakan untuk menulis aturan CSS internal di dalam bagian <code>&lt;head&gt;</code> halaman HTML.
+            </p>
+            <p>
+                - <code>body</code>: Elemen ini memilih seluruh halaman web dan memberikan latar belakang berwarna abu-abu muda serta font default Arial.
+            </p>
+            <p>
+                - <code>h1</code>: Elemen ini menentukan gaya untuk tag <code>&lt;h1&gt;</code>, yaitu memberi warna biru dan menyusun teks di tengah.
+            </p>
+            <p>
+                - <code>p</code>: Elemen ini memberikan gaya pada tag <code>&lt;p&gt;</code>, yaitu memberi warna hijau dan ukuran font 18px.
+            </p>
+
+            <h3>3. Keuntungan Menggunakan CSS Internal</h3>
+            <p>
+                - Sederhana untuk satu halaman: CSS internal sangat mudah diterapkan ketika Anda bekerja dengan satu halaman HTML saja.
+            </p>
+            <p>
+                - Tidak memerlukan file eksternal: Anda tidak perlu membuat file CSS terpisah, cukup menulisnya di dalam file HTML itu sendiri.
+            </p>
+            <p>
+                - Mudah dikelola untuk halaman tunggal: Ketika halaman web Anda tidak terlalu besar atau rumit, CSS internal cukup efektif untuk pengelolaan gaya.
+            </p>
+
+            <h3>4. Contoh Penggunaan CSS Internal</h3>
+            <p>Berikut adalah contoh yang lebih lengkap tentang bagaimana menerapkan CSS internal pada halaman HTML:</p>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Contoh Gaya CSS&lt;/title&gt;
+                        &lt;style&gt;
+                            body {
+                                background-color: lightgray;
+                                font-family: 'Verdana', sans-serif;
+                            }
+                            h1 {
+                                color: darkblue;
+                                text-align: center;
+                            }
+                            p {
+                                color: darkgreen;
+                                font-size: 20px;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;Belajar CSS Internal&lt;/h1&gt;
+                        &lt;p&gt;Dengan menggunakan CSS internal, Anda bisa memberikan gaya yang menarik pada halaman web Anda.&lt;/p&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+    </div>
+</section>
+<section class="footer">
+    <center><p>© Website Pembelajaran</p></center>
+</section>
+</body>
+</html>
+</body>
+</html>

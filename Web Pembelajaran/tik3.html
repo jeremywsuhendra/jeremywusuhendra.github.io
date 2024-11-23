@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+    <title>Web Pembelajaran</title>
+    <link rel="stylesheet" href="styletik.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src='logocc.png'></a>
+            <div class="navlink">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="matematika.html">Matematika</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="mat1.html">Persamaan Lingkaran</a></li>
+                            <li><a href="mat2.html">Persamaan Garis Singgung</a></li>
+                            <li><a href="mat3.html">Teorema Sisa</a></li>
+                            <li><a href="mat4.html">Teorema Faktor dan Vietta</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="fisika.html">Fisika</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="fis1.html">Gravitasi</a></li>
+                            <li><a href="fis2.html">Usaha & Energi</a></li>
+                            <li><a href="fis3.html">Impuls & Momentum</a></li>
+                            <li><a href="fis4.html">KBT & Dinamika Rotasi</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="informatika.html">Informatika</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="tik1.html">HTML</a></li>
+                            <li><a href="tik2.html">CSS Internal</a></li>
+                            <li><a href="tik3.html">CSS Eksternal</a></li>
+                            <li><a href="tik4.html">Blender</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="sosiologi.html">Sosiologi</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="sos1.html">Kelompok Sosial</a></li>
+                            <li><a href="sos2.html">Permasalahan Sosial</a></li>
+                            <li><a href="sos3.html">Struktur Sosial</a></li>
+                            <li><a href="sos4.html">Konflik Sosial</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cccup.html">Canisius College Cup</a></li>
+                    <li><a href="tentangsaya.html">Tentang Saya</a></li>
+                </ul>
+            </div>
+        </nav>
+    <div class="textbox">
+        <h1>CSS Eksternal</h1>
+        <a href="#Isi" class="visit">Click to Learn</a>
+    </div>
+</section>
+<section class="row">
+    <div class="box sidebar">
+       <img src="iklan.jpeg">
+       <img src="iklan2.jpeg">
+    </div>
+    <div class="box main" id="Isi">
+        <div class="box main" id="Isi">
+            <h1>Pengenalan CSS Eksternal</h1>
+            <p>
+                CSS Eksternal adalah cara menulis aturan CSS dalam file terpisah dengan file HTML. File CSS ini kemudian dihubungkan ke file HTML menggunakan tag <code>&lt;link&gt;</code> yang diletakkan di dalam bagian <code>&lt;head&gt;</code>. CSS eksternal memungkinkan Anda untuk mengelola gaya halaman web dengan lebih terorganisir dan dapat digunakan kembali di banyak halaman web.
+            </p>
+
+            <h3>1. Struktur CSS Eksternal</h3>
+            <p>
+                CSS eksternal ditulis dalam file dengan ekstensi <code>.css</code> dan dapat digunakan pada banyak halaman web. Anda cukup menautkan file CSS tersebut ke file HTML menggunakan tag <code>&lt;link&gt;</code>.
+            </p>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Contoh CSS Eksternal&lt;/title&gt;
+                        &lt;link rel="stylesheet" href="style.css"&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;Selamat datang di CSS Eksternal&lt;/h1&gt;
+                        &lt;p&gt;CSS Eksternal memungkinkan kita untuk mengelola gaya halaman web secara terpisah.&lt;/p&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+
+            <h3>2. File CSS Eksternal</h3>
+            <p>
+                Berikut adalah contoh file <code>style.css</code> yang digunakan untuk memberi gaya pada halaman HTML:
+            </p>
+            <pre>
+                body {
+                    background-color: lightblue;
+                    font-family: 'Arial', sans-serif;
+                }
+                h1 {
+                    color: darkgreen;
+                    text-align: center;
+                }
+                p {
+                    color: darkred;
+                    font-size: 18px;
+                }
+            </pre>
+
+            <h3>3. Keuntungan Menggunakan CSS Eksternal</h3>
+            <p>
+                - Dapat digunakan pada banyak halaman: CSS eksternal memungkinkan Anda untuk mengelola gaya yang konsisten di seluruh halaman dalam sebuah website.
+            </p>
+            <p>
+                - Lebih terorganisir: Dengan memisahkan file HTML dan CSS, pengelolaan proyek web menjadi lebih terstruktur dan mudah dikelola.
+            </p>
+            <p>
+                - Lebih efisien: CSS eksternal memungkinkan browser untuk menyimpan file CSS, yang mempercepat waktu muat halaman jika file tersebut sudah di-cache.
+            </p>
+
+            <h3>4. Contoh Penggunaan CSS Eksternal</h3>
+            <p>Berikut adalah contoh lebih lengkap tentang bagaimana menerapkan CSS eksternal pada halaman HTML:</p>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Contoh Gaya CSS Eksternal&lt;/title&gt;
+                        &lt;link rel="stylesheet" href="style.css"&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;Selamat datang di CSS Eksternal&lt;/h1&gt;
+                        &lt;p&gt;CSS eksternal digunakan di sini untuk memberikan gaya pada halaman ini.&lt;/p&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+    </div>
+</section>
+<section class="footer">
+    <center><p>© Website Pembelajaran</p></center>
+</section>
+</body>
+</html>
+</body>
+</html>
